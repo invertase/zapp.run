@@ -11,7 +11,7 @@ assignees: ''
 
 **Project ID (e.g. `flutter-123456`)**: 
 **Operating System & Version (e.g. `macOS Monterey 12.1`)**:
-**Browser & Version (e.g. `Chome 102.0.5005.115`) **:
+**Browser & Version (e.g. `Chome 102.0.5005.115`)**:
 
 ### Description
 

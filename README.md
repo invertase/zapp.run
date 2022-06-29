@@ -22,3 +22,11 @@ Zapp is currently a closed source project, accessible via [https://zapp.run](htt
 
 Zapp builds projects using Flutter Web, therefore only packages which support Flutter Web are supported in Zapp. If a package you are using supports web but isn't working correctly, please file an issue so we're able to investigate.
 
+### What isn't supported?
+
+We're currently working hard to get as many features supported as possible. The top features we do not yet support are:
+
+- Assets
+- Isolates
+- Dart lints (via `analysis_options.yaml`) https://github.com/invertase/zapp.run/issues/18
+- Semantic token highlighting https://github.com/invertase/zapp.run/issues/19

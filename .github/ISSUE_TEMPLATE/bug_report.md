@@ -13,6 +13,6 @@ assignees: ''
 **Operating System & Version (e.g. `macOS Monterey 12.1`)**:
 **Browser & Version (e.g. `Chome 102.0.5005.115`)**:
 
-### Description
+### Description
 
 <!-- Describe the problem, please provide screenshots if applicable -->

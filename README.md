@@ -1,4 +1,9 @@
-# Zapp!
+<p align="center">
+  <a href="https://zapp.run">
+    <img width="100px" src="https://static.invertase.io/assets/zapp/logo.svg"><br/>
+  </a>
+  <h2 align="center">Zapp!</h2>
+</p>
 
 Welcome to the GitHub repository for Zapp! An online editor allowing you to build Flutter applications in the browser.
 

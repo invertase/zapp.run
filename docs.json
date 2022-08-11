@@ -1,0 +1,10 @@
+{
+  "name": "Zapp!",
+  "favicon": "https://zapp.run/favicons/favicon-32x32.png",
+  "twitter": "zapp_run",
+  "theme": "#60A5FA",
+  "automaticallyInferNextPrevious": false,
+  "sidebar": [
+    ["Welcome", "/"]
+  ]
+}

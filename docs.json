@@ -1,6 +1,7 @@
 {
-  "name": "Zapp!",
-  "favicon": "https://zapp.run/favicons/favicon-32x32.png",
+  "name": "Zapp! Documentation",
+  "favicon": "https://static.invertase.io/assets/zapp/favicon-32x32.png",
+  "socialPreview": "https://static.invertase.io/assets/zapp/zapp-social-preview.jpg",
   "twitter": "zapp_run",
   "theme": "#60A5FA",
   "automaticallyInferNextPrevious": false,

@@ -11,7 +11,7 @@ Welcome to the GitHub repository for Zapp! An online editor allowing you to buil
 
 The source code for Zapp is currently closed-source, this repository is used for issue reporting, feature requests and a public project roadmap.
 
-> **Note:** Zapp is currently in private EAP and only explicitly allowed users can access it.
+> **Note:** Zapp is currently in open beta so please report any issues.
 
 ## FAQs
 

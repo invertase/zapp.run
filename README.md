@@ -31,6 +31,5 @@ Zapp builds projects using Flutter Web, therefore only packages which support Fl
 
 We're currently working hard to get as many features supported as possible. The top features we do not yet support are:
 
-- Assets https://github.com/invertase/zapp.run/issues/25
 - Dart lints (via `analysis_options.yaml`) https://github.com/invertase/zapp.run/issues/18
 - Semantic token highlighting https://github.com/invertase/zapp.run/issues/19

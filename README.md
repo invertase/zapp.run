@@ -3,6 +3,9 @@
     <img width="100px" src="https://static.invertase.io/assets/zapp/logo.svg"><br/>
   </a>
   <h2 align="center">Zapp!</h2>
+  <a href="https://invertase.link/discord">
+   <img src="https://img.shields.io/discord/295953187817521152.svg?style=flat-square&colorA=7289da&label=Chat%20on%20Discord" alt="Chat on Discord">
+  </a>
 </p>
 
 Welcome to the GitHub repository for Zapp! An online editor allowing you to build Flutter applications in the browser.

@@ -1,11 +1,48 @@
 {
-  "name": "Zapp! Documentation",
+  "name": "Zapp!",
+  "logo": "https://storage.googleapis.com/static.invertase.io/assets/zapp/logo.svg",
   "favicon": "https://static.invertase.io/assets/zapp/favicon-32x32.png",
   "socialPreview": "https://static.invertase.io/assets/zapp/zapp-social-preview.jpg",
   "twitter": "zapp_run",
   "theme": "#60A5FA",
-  "automaticallyInferNextPrevious": false,
+  "anchors": [
+    {
+      "title": "Homepage",
+      "icon": "house",
+      "link": "https://zapp.run"
+    },
+    {
+      "title": "Changelog",
+      "icon": "list-tree",
+      "link": "https://zapp.run/changelog"
+    },
+    {
+      "title": "Blog",
+      "icon": "blog",
+      "link": "https://zapp.run/blog"
+    },
+    {
+      "title": "Discord",
+      "icon": "discord",
+      "link": "https://invertase.link/discord"
+    }
+  ],
   "sidebar": [
-    ["Welcome", "/"]
+    ["Welcome", "/"], 
+    ["Getting Started", [
+      ["Choosing a template", "/templates"],
+      ["Using the editor", "/editor"],
+      ["Forking", "/forking"],
+      ["Running & Saving", "/running-and-saving"]
+    ]],
+    ["Features", [
+      ["Packages", "/features/packages"],
+      ["File Explorer", "/features/file-explorer"],
+      ["Share & Embed", "/features/share-and-embed"],
+      ["Debugging", "/features/debugging"],
+      ["IntelliSense", "/features/intellisense"],
+      ["pub.dev Previews", "/features/pubdev-previews"],
+      ["GitHub Import", "/features/github-import"]
+    ]]
   ]
 }

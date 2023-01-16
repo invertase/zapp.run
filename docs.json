@@ -28,21 +28,28 @@
     }
   ],
   "sidebar": [
-    ["Welcome", "/"], 
-    ["Getting Started", [
-      ["Choosing a template", "/templates"],
-      ["Using the editor", "/editor"],
-      ["Forking", "/forking"],
-      ["Running & Saving", "/running-and-saving"]
-    ]],
-    ["Features", [
-      ["Packages", "/features/packages"],
-      ["File Explorer", "/features/file-explorer"],
-      ["Share & Embed", "/features/share-and-embed"],
-      ["Debugging", "/features/debugging"],
-      ["IntelliSense", "/features/intellisense"],
-      ["pub.dev Previews", "/features/pubdev-previews"],
-      ["GitHub Import", "/features/github-import"]
-    ]]
+    [
+      "Getting Started",
+      [
+        ["Welcome", "/"],
+        ["Choosing a template", "/templates"],
+        ["Using the editor", "/editor"],
+        ["Forking", "/forking"],
+        ["Running & Saving", "/running-and-saving"]
+      ]
+    ],
+    [
+      "Features",
+      [
+        ["Packages", "/features/packages"],
+        ["File Explorer", "/features/file-explorer"],
+        ["Share & Embed", "/features/share-and-embed"],
+        ["Debugging", "/features/debugging"],
+        ["IntelliSense", "/features/intellisense"],
+        ["pub.dev Previews", "/features/pubdev-previews"],
+        ["GitHub Import", "/features/github-import"],
+        ["Integrations", "/features/integrations"]
+      ]
+    ]
   ]
 }

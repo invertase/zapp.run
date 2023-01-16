@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Open in Zapp",
+  "name": "Zapp! Extension",
   "version": "1.0",
-  "description": "Adds a button to open the example app of a Flutter package in Zapp",
+  "description": "This extension adds useful 'Open in Zapp!' buttons to various websites.",
 
   "icons": {
     "16": "images/icon-16.png",
@@ -12,8 +12,8 @@
   },
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
-      "matches": ["https://pub.dev/*"]
+      "js": ["scripts/pub.dev/package.js"],
+      "matches": ["https://pub.dev/packages/*"]
     }
   ]
 }

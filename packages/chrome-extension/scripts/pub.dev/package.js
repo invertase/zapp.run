@@ -36,6 +36,27 @@ function main() {
 
   li.appendChild(a);
   header.appendChild(li);
+
+  // Version tabs
+  if (type === "versions" && !value) {
+    const versions = document.querySelector("tbody").querySelectorAll("tr");
+    for (const version of versions) {
+      const td = document.createElement("td");
+      const aVersion = a.cloneNode(true);
+      td.className = "archive";
+      aVersion.href = `https://zapp.run/pub/${pkg}/${version.getAttribute(
+        "data-version"
+      )}`;
+      aVersion.innerHTML = `<img src="https://static.invertase.io/assets/zapp/logo.svg" alt="Logo" width="16" style="margin-right: .3rem;" />`;
+      td.innerHTML = aVersion.outerHTML;
+      version.appendChild(td);
+    }
+
+    const thead = document.querySelector("thead").querySelector("tr");
+    const th = document.createElement("th");
+    th.className = "archive";
+    thead.appendChild(th);
+  }
 }
 
 main();

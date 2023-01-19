@@ -14,6 +14,10 @@
     {
       "js": ["scripts/pub.dev/package.js"],
       "matches": ["https://pub.dev/packages/*"]
+    },
+    {
+      "js": ["scripts/github.com/repository.js"],
+      "matches": ["https://github.com/*"]
     }
   ]
 }

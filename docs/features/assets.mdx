@@ -1,0 +1,50 @@
+---
+title: Assets
+description: Learn how to bundle assets with your application.
+---
+
+# Assets
+
+Assets are files which are bundled as part of your project, and include features such as
+Asset Varients. Assets may be images, sounds, fonts or any other file type.
+
+> Assets are not the same as public files located in your `web` directory.
+
+Zapp! supports both local assets and assets included in [packages](/features/packages).
+
+## Adding assets
+
+Just like you would locally, specify your assets within your `pubspec.yaml` file.
+
+```yaml
+flutter:
+  assets:
+    - assets/my_icon.png
+    - assets/fonts/
+```
+
+You can specify specific files or directories (including varient support). See the
+[Flutter documentation](https://docs.flutter.dev/development/ui/assets-and-images) for more information.
+
+Once defined, add your assets via the [File Explorer](/features/file-explorer) under the `assets` directory.
+
+<Info>
+  Naming the directory `assets` is only convention, it can be anything you like.
+</Info>
+
+Once added, make sure you build your application. The build process will bundle the assets into your application
+build output.
+
+## Using assets
+
+Once you have built your application, you can then use your assets in your code, for example:
+
+```dart
+return const Image(image: AssetImage('assets/my_icon.png'));
+```
+
+If assets are include from 3rd party [packages](/features/packages), you can access them as usual:
+
+```dart
+return const AssetImage('icons/heart.png', package: 'my_icons');
+```

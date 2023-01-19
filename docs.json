@@ -43,10 +43,11 @@
       [
         ["Packages", "/features/packages"],
         ["File Explorer", "/features/file-explorer"],
+        ["Assets", "/features/assets"],
         ["Share & Embed", "/features/share-and-embed"],
         ["Debugging", "/features/debugging"],
         ["IntelliSense", "/features/intellisense"],
-        ["pub.dev Previews", "/features/pubdev-previews"],
+        ["Pub Previews", "/features/pubdev-previews"],
         ["GitHub Import", "/features/github-import"],
         ["Integrations", "/features/integrations"]
       ]

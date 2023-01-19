@@ -1,5 +1,65 @@
 ---
-title: TODO
+title: Packages
+description: Learn about how to use pub.dev packages in your project.
 ---
 
-TODO
+# Packages
+
+Zapp! supports using any web compatible Dart and/or Flutter package. You can find 
+packages on [pub.dev](https://pub.dev/), the official package repository for Dart and Flutter.
+
+Once you've found a package, you can check whether it's compatible by idenfying whether the Web
+platform is listed, for example:
+
+TODO IMAGE
+
+## Installing Packages
+
+Much like a local project, you can add packages to the `dependencies` section of your
+`pubspec.yaml` file. For example:
+
+```yaml
+name: flutter_app
+description: A new Flutter project.
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.5
+```
+
+Once added, you can install the package by either building your application, by running
+the 'pub get' command, or the 'Pub Get' editor action:
+
+TODO Examples
+
+## Using Packages
+
+Once installed, simply import the package at the top of any `.dart` file in your project:
+
+```dart
+import 'package:http/http.dart' as http;
+
+var url = Uri.https('example.com', 'whatsit/create');
+var response = await http.post(url, body: {'name': 'doodle', 'color': 'blue'});
+```
+
+[IntelliSense](/features/intellisense) support is built directly into the editor, so you can easily identify any 
+available classes, methods, properties or errors with your package usage.
+
+## Package Versions
+
+Much like you'd expect from your local environment, you can specify a version range for any package you
+install. For example:
+
+```yaml
+http: ^0.13.5  # Install version 0.13.5 or later, but before 0.14.0
+http: '0.13.5' # Install version 0.13.5 specifically
+http:          # Install the latest version of the package
+```
+
+To lean more, visit the [official documentation](https://dart.dev/tools/pub/versioning#semantic-versions).
+

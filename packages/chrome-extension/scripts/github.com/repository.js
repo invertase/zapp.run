@@ -2,7 +2,7 @@ function main() {
   const exampleFolder = document.querySelector('[title="example"]');
   const pubspecs = document.querySelectorAll('[title="pubspec.yaml"]');
 
-  if (!files) return;
+  if (!pubspecs) return;
 
   for (const child of pubspecs) {
     const zappButton = document.createElement("a");

@@ -8,41 +8,47 @@ of a local environment.
 
 ## Features
 
-Alongside a built in [editor](/editor), Zapp! provides a number of powerful features:
-
 <Grid>
   <Feature
     href="/features/packages"
     title="Support for any web compatible package"
-    description="Zapp! supports any web compatible package from [pub.dev](https://pub.dev)."
+    description="Use any web compatible package from pub.dev, just like you would locally by editing your pubspec.yaml."
+  />
+  <Feature
+    href="/features/file-explorer"
+    title="Create a project with multiple files & directories."
+    description="The built in file explorer allows you to create a project with multiple files and directories."
+  />
+  <Feature
+    href="/features/assets"
+    title="Asset support"
+    description="Add your own Flutter assets or use 3rd party package assets."
   />
   <Feature
     href="/editor"
     title="Built in IntelliSense support"
-    description="Zapp! provides built in IntelliSense support for Dart and Flutter."
+    description="The built in VSCode-like editor provides support for IntelliSense."
   />
   <Feature
     href="/features/share-and-embed"
     title="Sharing and embeding a project"
-    description="Zapp! allows you to share and embed a project, perfect for documentation."
+    description="Share and embed your projects on any website, perfect for documentation, tutorials and examples."
   />
   <Feature
+    href="/features/previews"
     title="Instantly previewing your Flutter application"
-    description="Zapp! allows you to instantly preview your Flutter application via a unique URL."
+    description="Preview your Flutter application instantly via a unique URL, hosted on zapp.page."
   />
   <Feature
-    title="Integrated logs stream directly from your application"
-    description="Zapp! provides an integrated logs stream directly from your application to Zapp!"
+    href="/features/pubdev-import"
+    title="Pub Previews"
+    description="Preview any package example directly from your favourite pub.dev packages."
   />
   <Feature
-    title="Static analysis via Dart analyzer integration"
-    description="Zapp! provides static analysis via Dart analyzer integration."
+    href="/features/github-import"
+    title="GitHub Import"
+    description="Import any Dart or Flutter project from a GitHub repository or Gist."
   />
-  <Feature
-    title="Running Dart tests"
-    description="Zapp! allows you to run Dart tests."
-  />
-  <Feature title="Asset support" description="Zapp! provides asset support." />
 </Grid>
 
 ## Getting started
@@ -72,20 +78,35 @@ export const Grid = (props) => {
 export const Feature = (props) => {
   return (
     <a
+      className="not-prose border dark:border-zinc-800"
       style={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        padding: "1rem",
-        border: "1px solid #eaeaea",
-        borderRadius: "4px",
+        padding: "2rem",
+        borderRadius: "16px",
         textDecoration: "none",
         color: "inherit",
       }}
     >
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
+      <h3
+        style={{
+          marginBottom: "1rem",
+          fontSize: "17px",
+          fontWeight: "bold",
+        }}
+      >
+        {props.title}
+      </h3>
+      <p
+        style={{
+          fontSize: "14px",
+          fontWeight: "normal",
+        }}
+      >
+        }}>{props.description}
+      </p>
     </a>
   );
 };

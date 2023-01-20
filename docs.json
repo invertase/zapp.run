@@ -46,7 +46,7 @@
         ["Assets", "/features/assets"],
         ["Previews", "/features/previews"],
         ["Share & Embed", "/features/share-and-embed"],
-        ["Pub Previews", "/features/pubdev-previews"],
+        ["Pub Import", "/features/pubdev-import"],
         ["GitHub Import", "/features/github-import"],
         ["Integrations", "/features/integrations"]
       ]

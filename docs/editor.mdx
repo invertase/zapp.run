@@ -1,5 +1,49 @@
 ---
-title: TODO
+title: Editor
+description: Learn about the editor within Zapp!
 ---
 
-TODO
+# Editor
+
+The editor witin Zapp! might look familar if you are a VSCode user - it's pulled directly from VSCode to
+run in your browser.
+
+Alongside the usual features you'd expect from an editor, Zapp! integrates directly with Dart LSP - providing
+expected features you'll find when locally developing with Dart & Flutter.
+
+### IntelliSense
+
+Zapp! supports IntelliSense via the Dart Analysis Server. This means you'll get code completion, code
+formatting, code navigation, code actions (wrap with widget, import completion), and more.
+
+TODO screenshot
+
+### Shortcuts
+
+Currently, Zapp! supports the VSCode default shortcuts. We're working on ways to allow customization of shortcuts,
+alongwith using other shortcut sources (e.g. IntelliJ, Vim etc).
+
+The following custom shortcuts are available:
+
+| Shortcut               | Action                          |
+| ---------------------- | ------------------------------- |
+| `⌘`/`Ctrl` + `P`       | Command Palette                 |
+| `⌘`/`Ctrl` + `S`       | Build & save any modified files |
+| `⌘`/`Ctrl` + `R`       | Build & save any modified files |
+| `Ctrl` + `Shift` + `P` | Perform a pub get               |
+
+You can press the "View Shortcuts" button in the bottom right of the editor to view all available shortcuts:
+
+(Note; this will soon be fully revamped to provide a better experience... stay tuned!)
+
+### Command Palette
+
+The command palette offers the ability to run all available actions within Zapp!. To trigger the command palette,
+press the Meta key; `⌘` on macOS or `Ctrl` on Windows & Linux along with the period key (`.`):
+
+TODO screenshot
+
+Alongside regular editor actions such as formatting, wrapping lines, duplicating lines and more, the command palette also offers
+the ability perform actions such as running pub get, restart the analaysis server, download the project as an archive and more:
+
+TODO screenshot

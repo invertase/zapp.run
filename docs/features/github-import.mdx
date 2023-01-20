@@ -5,3 +5,72 @@ description: Import any GitHub repository Dart or Flutter application code.
 
 # GitHub Import
 
+Zapp! supports the importing of any Dart or Flutter application directly from GitHub.
+This is a great way to quickly showcase an application without setting up a local environment.
+
+Importing from GitHub is also benefical if you wish to maintain examples alongside your own
+pub package and not worry about syncing with Zapp!.
+
+## Importing a GitHub repository
+
+Zapp! supports importing projects from the root of a repository, sub-directory,
+branch, ref, or tag.
+
+Provide the direct GitHub URL pathname to the URL `https://zapp.run/github/<path>`,
+and the code will be imported.
+
+TODO IMAGE
+
+### Examples
+
+**Example 1: Importing a repository**
+
+1. [https://github.com/roaa94/flutter_3d_calculator](https://github.com/roaa94/flutter_3d_calculator)
+1. [https://zapp.run/github/roaa94/flutter_3d_calculator](https://zapp.run/github/roaa94/flutter_3d_calculator)
+
+**Example 2: Importing a sub-directory**
+
+1. [https://github.com/rrousselGit/riverpod/tree/master/packages/flutter_riverpod/example](https://github.com/rrousselGit/riverpod/tree/master/packages/flutter_riverpod/example)
+1. [https://zapp.run/github/rrousselGit/riverpod/tree/master/packages/flutter_riverpod/example](https://zapp.run/github/rrousselGit/riverpod/tree/master/packages/flutter_riverpod/example)
+
+### Requirements
+
+When importing a GitHub repository, the following requirements must be met:
+
+- The repository path provided must contain a `pubspec.yaml` file.
+- The repository path provided must contain runnable example, Zapp! supports:
+  - `lib/main.dart`
+  - `example/main.dart`
+  - `example/example.dart`
+  - `example/lib/main.dart`
+- The repository must be less than X MB in size.
+
+### Caching
+
+Imported GitHub projects will be cached based on the latest Commit SHA - if you modify the code on GitHub,
+the next import of the project will re-import the latest code.
+
+## Importing a GitHub Gist
+
+Gists are a common way to share snippests of code without managing a repository.
+
+You can import Gists via the URL `https://zapp.run/gist/<id>`.
+
+### Example
+
+1. Gist: [https://gist.github.com/flutterdevrelgists/ecabed4a17a3aad8bee7c6327e472fc8](https://gist.github.com/flutterdevrelgists/ecabed4a17a3aad8bee7c6327e472fc8)
+1. Import: [https://zapp.run/gist/ecabed4a17a3aad8bee7c6327e472fc8](https://zapp.run/gist/ecabed4a17a3aad8bee7c6327e472fc8)
+
+TODO IMAGE
+
+### Requirements
+
+When importing a GitHub Gist, the following requirements must be met:
+
+- The Gist must contain a `main.dart` file.
+- The Gist may optionally contain a `pubspec.yaml` file (if not provided, one will be automatically generated).
+
+### Caching
+
+Gists are cached based on their ID alongwith the latest updated timestamp. If you modify the Gist,
+the next import of the project will re-import the latest code.

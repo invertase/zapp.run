@@ -1,5 +1,93 @@
 ---
-title: TODO
+title: Share & Embed
+description: Share & Embed your project on the web.
 ---
 
-TODO
+# Share & Embed
+
+All projects on Zapp! can be shared with anyone else on the web (private projects coming later). 
+If someone else edits your project, it will be [forked](/forking).
+
+Simply copy the URL of your project and share it with anyone.
+
+## Embedding
+
+Projects can also be embedded on 3rd party websites via an [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
+When you embed a project, a configurable simplified editor will be displayed instead, however the UI will offer the option to open the
+project directly on Zapp! allowing users to experience the full editor.
+
+You can embed projects by creating an `iframe` with the URL of your project, including Pub & GitHub imports, for example:
+
+```html
+<iframe src="https://zapp.run/edit/flutter"></iframe>
+<iframe src="https://zapp.run/gist/ecabed4a17a3aad8bee7c6327e472fc8"></iframe>
+<iframe src="https://zapp.run/github/Yczar/solar-system"></iframe>
+<iframe src="https://zapp.run/pub/http/0.13.5"></iframe>
+```
+
+Embedding is great for tutorials, documentation, and more.
+
+### Via UI
+
+To embed a project via the UI, press the "Embed" button in the top right of the editor:
+
+A dialog will show with configuration options, including the ability to copy the embed code,
+modify the theme, lazy load and the default editor view.
+
+### Manual embedding
+
+To embed a project, simply add the following to your website:
+
+```html
+<iframe 
+  src="https://zapp.run/edit/flutter" 
+  style="width: 100%; height: 100%; border: 0; overflow: hidden;">
+</iframe>
+```
+
+> Change out the `src` for your own project URL.
+
+This will display the embedded preview, taking up the maxium width and height of the parent element.
+
+#### View Type
+
+By default, the editor will show either the code editor, preview or both depending on the available width the embed has.
+To override this, you can configure the `split` search param to be a value between 0 & 100 (percentage):
+
+```html
+<!-- Default (split based on available width): -->
+<iframe src="https://zapp.run/edit/flutter"></iframe>
+
+<!-- 50/50 editor and preview -->
+<iframe src="https://zapp.run/edit/flutter?split=50"></iframe>
+
+<!-- 75/25 editor and preview -->
+<iframe src="https://zapp.run/edit/flutter?split=75"></iframe>
+
+<!-- 100 (editor only) -->
+<iframe src="https://zapp.run/edit/flutter?split=100"></iframe>
+
+<!-- 0 (preview only) -->
+<iframe src="https://zapp.run/edit/flutter?split=0"></iframe>
+```
+
+#### Lazy Loading
+
+Lazy loading prevents the editor from downloading until interaction has occurred - helping to reduce initial bandwidth usage
+if the embed is not too important to your page.
+
+To enable lazy loading, add the `lazy=true` search param to the `iframe` src:
+
+```html
+<iframe src="https://zapp.run/edit/flutter?lazy=true"></iframe>
+```
+
+#### Theme
+
+By default, the editor theme (light or dark) will use the users preference (if set) or the default theme operating system.
+
+To force override this, add the `theme` search param as `light` or `dark` to the `iframe` src:
+
+```html
+<iframe src="https://zapp.run/edit/flutter?theme=dark"></iframe>
+```

@@ -1,0 +1,62 @@
+---
+title: Pub Example Imports
+---
+
+# Pub Example Imports
+
+When building Dart & Flutter applications, you'll most likely be heading over to [https://pub.dev](https://pub.dev) to 
+find a package to use within your application. Pub provides an "Example" tab, where developers can
+showcase alongside the package how it works. This is great, however part of the problem is
+there's no way to run the example without installing it locally, copying parts of the example
+and running it locally.
+
+## Importing examples
+
+You can import examples from any web compatible package on pub.dev, and run them directly on Zapp! in seconds. 
+This is great for quickly testing out a package, or even for learning how to use a package.
+
+If you make any changes to the imported example, you'll [fork](/forking) the project.
+
+To get started, find the package you wish to try out (for example, [http](https://pub.dev/packages/http)),
+and add it to the URL `https://zapp.run/pub/<package>`:
+
+> [https://zapp.run/pub/http](https://zapp.run/pub/http)
+
+The package example will start to be imported, and you'll be notified about any issues (for example 
+if no example exists, compilation errors, not null safe etc).
+
+TODO IMAGE
+
+### Package versions
+
+By default, the latest package version will be used. If you wish to try a specific version, provide this
+to the URL `https://zapp.run/pub/<package>/<version>`: 
+
+> [https://zapp.run/pub/http/0.13.4](https://zapp.run/pub/http/0.13.4)
+
+If the version does not exist, an error will be shown.
+
+### Requirements
+
+### Requirements
+
+When importing a Pub example, the following requirements must be met:
+
+- The package must have a valid example (an `example` directory co-located with the package source).
+- The example must contain runnable example, Zapp! supports:
+  - `lib/main.dart`
+  - `example/main.dart`
+  - `example/example.dart`
+  - `example/lib/main.dart`
+
+### Caching
+
+Each specific package version is cached once built for the first time. Once cached,
+previewing the example will be near instant.
+
+## Chrome Extension
+
+Install the official Zapp! [Chrome Extension](https://chrome.google.com/webstore/detail/zapp-extension/bbgkmldccfmbpbdkfdhofdkjjafhiekc/related)
+to enable an "Open in Zapp!" button on pub.dev. This will open the example in Zapp! directly:
+
+TODO IMAGE

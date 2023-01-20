@@ -1,5 +1,93 @@
 ---
-title: TODO
+title: Integrations (PRIVATE BETA)
+description: Integrate with the Zapp! Compiler, Analyzer, Remote Build & more.
 ---
 
-TODO
+# Integrations (PRIVATE BETA)
+
+The Zapp! editor is powered by a number of integration services, which are unique to the Zapp! platform.
+If you have a service or product which could benefit from the below integrations, please get in touch
+with us via [Discord](https://zapp.run/on/discord).
+
+<Info>
+  The integration APIs are a paid service. Please contact us for more
+  information.
+</Info>
+
+## Compiler
+
+The Zapp! compiler is a JavaScript script which enables compilation of a Dart or Flutter application
+into a runnable web application. The compiler is fully browser based, and can be used to compile
+projects on the fly directly from the browser.
+
+Alongside this the compiler is extremely perforant, being able to compile large applications in
+seconds (somtimes even milliseconds!).
+
+```js
+// Your domain based API key
+const API_KEY = "...";
+
+// Import the Zapp! JS compiler
+const compiler = await import(
+  `https://cdn.zapp.run/compiler.min.js?key=${API_KEY}`
+);
+
+// Load a file system into the compiler
+await compiler.loadFileSystem({
+  "pubspec.yaml": "...",
+  "lib/main.dart": "...",
+});
+
+// Update any pub dependencies
+await compiler.runPubGet();
+
+// Compile the Flutter app!
+const output = await compiler.run("lib/main.dart");
+
+// Mount the Flutter app to the DOM
+compiler.mount(output, document.getElementById("flutter-app"));
+```
+
+### Features
+
+The compiler supports the following:
+
+- Compilation of Dart and Flutter applications into a mountable web application.
+- Multiple-file support.
+- Package support via `pubspec.yaml`.
+- Asset support (both local and package assets).
+
+## Analyzer
+
+The Zapp! compiler is a JavaScript script which enables running the Dart analyzer on a Dart or Flutter
+codebase. The analyzer returns detailed information about an application, such as errors & warnings,
+along with meta-information about the application (for example, the Widget outline).
+
+The analyzer is a performant browser based implementation of the Dart analyzer.
+
+```js
+// Your domain based API key
+const API_KEY = "...";
+
+// Import the Zapp! JS analyzer
+const analyer = await import(
+  `https://cdn.zapp.run/compiler.min.js?key=${API_KEY}`
+);
+
+// Load a file system into the analyzer
+await analyer.loadFileSystem({
+  "pubspec.yaml": "...",
+  "lib/main.dart": "...",
+});
+
+// Run the analyzer and get the output
+const output = await analyer.run();
+```
+
+## Remote Builds
+
+The remote build service powers both the [Pub Import](/features/pubdev-previews)
+& [GitHub Import](/features/github-import) features. The remote build service is a API endpoint
+accepting a Dart or Flutter application (as an archive), and returns a compiled web application.
+
+The remote build service is a performant, server based implementation of the Zapp! compiler.

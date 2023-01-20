@@ -51,15 +51,9 @@ of a local environment.
   />
 </Grid>
 
-## Getting started
+## Getting Started
 
-To get started with Zapp!, head over to [`https://zapp.new`](https://zapp.new). This page shows you the available templates
-you can select to get started:
-
-- screenshot -
-
-Select the "Flutter Template". This is a barebones Flutter application with no dependencies, allowing you to get started from
-scratch.
+To get started, head over to [Choosing a template](/templates).
 
 export const Grid = (props) => {
   return (
@@ -78,6 +72,7 @@ export const Grid = (props) => {
 export const Feature = (props) => {
   return (
     <a
+      href={props.href}
       className="not-prose border dark:border-zinc-800"
       style={{
         display: "flex",
@@ -105,7 +100,7 @@ export const Feature = (props) => {
           fontWeight: "normal",
         }}
       >
-        }}>{props.description}
+        {props.description}
       </p>
     </a>
   );

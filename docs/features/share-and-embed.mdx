@@ -27,12 +27,14 @@ You can embed projects by creating an `iframe` with the URL of your project, inc
 
 Embedding is great for tutorials, documentation, and more.
 
-### Via UI
+### Via Zapp! IDE
 
-To embed a project via the UI, press the "Embed" button in the top right of the editor:
+To embed a project via the Zapp! IDE interface, press the "Share" button in the top right of the editor and then the "Embed" option.
 
-A dialog will show with configuration options, including the ability to copy the embed code,
+A dialog will show configuration options including the ability to copy the embed code,
 modify the theme, lazy load and the default editor view.
+
+Close the dialog by clicking on the Zapp window behind the dialog.
 
 ![Dialog Example](/assets/share-and-embed-ui.png)
 
@@ -92,4 +94,15 @@ To force override this, add the `theme` search param as `light` or `dark` to the
 
 ```html
 <iframe src="https://zapp.run/edit/flutter?theme=dark"></iframe>
+```
+
+#### Multiple Params
+
+Multiple params may be set at the same time.  An example using split, theme, and lazy:
+
+```html
+<iframe 
+        src="https://zapp.run/edit/flutter?split=85&theme=light&lazy=true" 
+        style="width: 100%; height: 100%; border: 0; overflow: hidden;">
+</iframe>
 ```

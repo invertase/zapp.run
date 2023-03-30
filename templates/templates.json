@@ -1,0 +1,14 @@
+{
+  "dart": {
+    "name": "Dart",
+    "description": "A new Dart project."
+  },
+  "dart_http": {
+    "name": "Dart HTTP",
+    "description": "An example HTTP request with Dart."
+  },
+  "flutter": {
+    "name": "Flutter",
+    "description": "A new Flutter project."
+  }
+}

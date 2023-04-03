@@ -1,3 +1,5 @@
+const LOGO = `<img src="https://static.invertase.io/assets/zapp/logo.svg" alt="Logo" width="16" title="Open in Zapp!" style="margin-right: .3rem;" />`;
+
 function main() {
   const badges = document.querySelectorAll(".tag-badge-sub");
 
@@ -32,7 +34,7 @@ function main() {
   a.style.display = "inline-flex";
   a.style.alignItems = "center";
   a.target = "_blank";
-  a.innerHTML = `<img src="https://static.invertase.io/assets/zapp/logo.svg" alt="Logo" width="16" style="margin-right: .3rem;" /><span>Open in Zapp!</span>`;
+  a.innerHTML = LOGO + `<span>Open in Zapp!</span>`;
 
   li.appendChild(a);
   header.appendChild(li);
@@ -47,7 +49,7 @@ function main() {
       aVersion.href = `https://zapp.run/pub/${pkg}/${version.getAttribute(
         "data-version"
       )}`;
-      aVersion.innerHTML = `<img src="https://static.invertase.io/assets/zapp/logo.svg" alt="Logo" width="16" style="margin-right: .3rem;" />`;
+      aVersion.innerHTML = LOGO;
       td.innerHTML = aVersion.outerHTML;
       version.appendChild(td);
     }

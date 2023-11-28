@@ -20,8 +20,8 @@ The Zapp! compiler is a JavaScript script which enables compilation of a Dart or
 into a runnable web application. The compiler is fully browser based, and can be used to compile
 projects on the fly directly from the browser.
 
-Alongside this the compiler is extremely perforant, being able to compile large applications in
-seconds (somtimes even milliseconds!).
+Alongside this the compiler is extremely performant, being able to compile large applications in
+seconds (sometimes even milliseconds!).
 
 ```js
 // Your domain based API key
@@ -70,24 +70,24 @@ The analyzer is a performant browser based implementation of the Dart analyzer.
 const API_KEY = "...";
 
 // Import the Zapp! JS analyzer
-const analyer = await import(
+const analyzer = await import(
   `https://cdn.zapp.run/compiler.min.js?key=${API_KEY}`
 );
 
 // Load a file system into the analyzer
-await analyer.loadFileSystem({
+await analyzer.loadFileSystem({
   "pubspec.yaml": "...",
   "lib/main.dart": "...",
 });
 
 // Run the analyzer and get the output
-const output = await analyer.run();
+const output = await analyzer.run();
 ```
 
 ## Remote Builds
 
 The remote build service powers both the [Pub Import](/features/pubdev-previews)
-& [GitHub Import](/features/github-import) features. The remote build service is a API endpoint
+& [GitHub Import](/features/github-import) features. The remote build service is an API endpoint
 accepting a Dart or Flutter application (as an archive), and returns a compiled web application.
 
 The remote build service is a performant, server based implementation of the Zapp! compiler.

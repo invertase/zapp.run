@@ -13,14 +13,14 @@ The file explorer can be accessed via the left menu in the editor:
 
 ![File Explorer](/assets/file-explorer-example.png)
 
-If you're familar with Dart/Flutter projects, the layout will feel familar.
-The root of the project consists at minuim of a `pubspec.yaml` file,
+If you're familiar with Dart/Flutter projects, the layout will feel familiar.
+The root of the project consists at minimum of a `pubspec.yaml` file,
 used for [managing packages](/features/packages) and a `lib` directory which will contain
 your Dart files and code.
 
 ### Creating files
 
-You can create files a number of ways:
+You can create files in a number of ways:
 
 - Right clicking the directory, and selecting "Create file".
 - Clicking the "Create file" icon in the Explorer header, or when hoving on a specific directory.
@@ -49,18 +49,18 @@ It contains the files that will be served publically when previewing the applica
 
 ![File Explorer](/assets/file-explorer-web-dir.png)
 
-Alongside public assests such as favicon and manifest files, the `index.html` file is also located here.
+Alongside public assets such as favicon and manifest files, the `index.html` file is also located here.
 
 This file allows you to import scripts, change the title of the application (in the browser) and more. You can
-learn more about this file in the [offical documentation](https://docs.flutter.dev/development/platform-integration/web/initialization).
+learn more about this file in the [official documentation](https://docs.flutter.dev/development/platform-integration/web/initialization).
 
 If you delete the `web` directory or `index.html` file, a barebones file will be used instead.
 
 ## Hidden directories
 
 Some directories and files are hidden by default, and are greyed out in the explorer. These include the
-`.dart_tool` & `build` directories, alongwith the `pubspec.lock` file. 
+`.dart_tool` & `build` directories, along with the `pubspec.lock` file. 
 
 It is not recommended you modify files within these directories since contents may be overwritten
-during the buid process. Files within these directories are visible for educational and debugging purposes.
+during the build process. Files within these directories are visible for educational and debugging purposes.
 
